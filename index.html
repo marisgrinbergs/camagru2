@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body class='z site'>
+        <div class="z header">
+            <div>
+                &nbsp;
+            </div>
+            <div class="z header-menu">
+                <div class="z button btn btn-light">
+                    <a href="inscription.html.php">S'inscrire</a>
+                </div>
+                <div class="z button btn btn-light">
+                    <a href="connexion.html">Se connecter</a>
+                </div>
+                <div class="z button btn btn-light">
+                    <a href="forgetpasswd.php">Mot de passe oublié</a>
+                </div>
+            </div>
+            <div>
+                <div class="header-logo__2">
+                    <img src="img/logo2.png" alt="logo2" height="100" width="100">
+                </div>
+            </div>
+        </div>
+
+        <div class="z section">
+            <div class="separator"></div>
+            <div class="section-menu">
+                <div class="z section-menu__cam">
+                    <div ><video id="video" width="640" height="480" autoplay></video></div>
+                    <div><button id="snap">Snap Photo</button></div>
+                </div>
+                <div class="z section-menu-images">         
+                    <canvas id="canvas" width="640" height="480"></canvas>
+                </div>
+             </div>
+        </div>
+        <div class="z footer">
+            <div>Camagru</div>
+         <div>&copy;Magrinbe 2020</div>
+        </div>
+        <script src="cam.js"></script>
+</body>
+</html>
