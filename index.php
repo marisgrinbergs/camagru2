@@ -26,18 +26,25 @@ session_start();
             <div class="section-menu">
                 <div class="z section-menu__cam">
                     <div ><video id="video" width="100%" height="100%" autoplay></video></div>
-                    <div><button id="snap">Snap Photo</button></div>
+                    <div><button id="snap" disabled>Snap Photo</button></div>
                 </div>
-                <div class="z section-menu-images">         
-                    <canvas id="canvas" width="450px" height="400px"></canvas>
+                <div class="z section-menu-images"> 
+                    <div class="z canvas">
+                        <canvas id="canvas" width="450px" height="400px"></canvas>
+                    </div>    
+                    <div class="z filter">
+                        <div>
+                        <input type="radio" id="filter1" name="filtre">
+                        <img src="img/leo.png" alt="leo" height="100" width="100">
+                        </div>
+                        <div>
+                        <input type="radio" id="filter1" name="filtre">
+                        <img src="img/leo.png" alt="leo" height="100" width="100">
+                        </div>
+                    </div>    
                 </div>
              </div>
              <?php
-    if (isset($_POST["data"]))
-    {
-    $image = $_POST["data"];
-    print($image);
-}
 print("LOL");
 ?>
         </div>
@@ -47,5 +54,6 @@ print("LOL");
         </div>
         <script src="cam.js"></script>
         <script src="image.js"></script>
+        <script src="filtre.js"></script>
 </body>
 </html>
